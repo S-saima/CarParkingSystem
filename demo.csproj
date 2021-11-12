@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22A7CD73-2DA6-484A-B84A-8F481C20060E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>demo</RootNamespace>
+    <AssemblyName>demo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Add_Manager.xaml.cs">
+      <DependentUpon>Add_Manager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass_M.xaml.cs">
+      <DependentUpon>ChangePass_M.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EntryExit.xaml.cs">
+      <DependentUpon>EntryExit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Guard_Details.xaml.cs">
+      <DependentUpon>Guard_Details.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Guard_Details1.xaml.cs">
+      <DependentUpon>Guard_Details1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Guard_Task.xaml.cs">
+      <DependentUpon>Guard_Task.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="M_Details.xaml.cs">
+      <DependentUpon>M_Details.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Parking_Details.xaml.cs">
+      <DependentUpon>Parking_Details.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Parking_Details1.xaml.cs">
+      <DependentUpon>Parking_Details1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PassChange_Guard.xaml.cs">
+      <DependentUpon>PassChange_Guard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Remove_Guard.xaml.cs">
+      <DependentUpon>Remove_Guard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Remove_Manager.xaml.cs">
+      <DependentUpon>Remove_Manager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserExitDetails.xaml.cs">
+      <DependentUpon>UserExitDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserView.xaml.cs">
+      <DependentUpon>UserView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Add_Guard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add_Manager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangePass_M.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EntryExit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Guard_Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Guard_Details1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Guard_Task.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Add_Guard.xaml.cs">
+      <DependentUpon>Add_Guard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Manager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="M_Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Parking_Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Parking_Details1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PassChange_Guard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Remove_Guard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Remove_Manager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserExitDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manager.xaml.cs">
+      <DependentUpon>Manager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="how-password-reuse-puts-your-enterprise-at-risk_1500 %281%29.webp" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="carprk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MicrosoftTeams-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="underground_parking_3d_model_max_e8aced45-0a2c-4362-9002-9f8f023de7ff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="underground-car-parking-garage-with-vacant-places_107791-1635.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="th.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3e058b91c88b3f26581cf9d95a620277.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="security.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bigstock-Cyber-Security-Data-Protection-287211133-1-1024x611.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="matrix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cso_password_elimination_abstract_passwords_by_bluebay2014_gettyimages-924698706_trashed_security_lock_in_garbage_can_by_porcorex_gettyimages-916512456_2400x1600-100798132-large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1431439445057C09.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

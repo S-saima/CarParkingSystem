@@ -1,0 +1,19 @@
+﻿<Window x:Class="demo.EntryExit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="EntryExit" Height="600" Width="950">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="571" Margin="0,0,0,-0.333" VerticalAlignment="Top" Width="943" Stretch="UniformToFill" Source="maxresdefault.jpg"/>
+        <Label Content="Select an Option" Foreground="White" Background="Black" FontFamily="Algerian" FontSize="50" HorizontalAlignment="Left" Margin="261,15,0,0" VerticalAlignment="Top" Height="85" Width="468"/>
+        <Button Content="Entry Information" FontSize="28" FontFamily="Cooper Black" HorizontalAlignment="Left" Margin="329,169,0,0" VerticalAlignment="Top" Width="330" Height="114" Click="Button_Click"/>
+        <Button Content="Exit  Information" FontSize="28" FontFamily="Cooper Black" HorizontalAlignment="Left" Margin="324,328,0,0" VerticalAlignment="Top" Width="330" Height="114" Click="Button_Click_1"/>
+        <Button Name="Logout" Content="Logout" Background="Red" FontSize="25" FontFamily="COOPER BLACK" HorizontalAlignment="Left" Margin="54,424,0,0" VerticalAlignment="Top" Width="152" Height="98" Click="Logout_Click"/>
+        <Button Content="Change Password" FontSize="22" Background="LightBlue" HorizontalAlignment="Left" Margin="701,447,0,0" VerticalAlignment="Top" Width="193" Height="75"/>
+
+
+    </Grid>
+</Window>

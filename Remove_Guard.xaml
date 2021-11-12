@@ -1,0 +1,21 @@
+﻿<Window x:Class="demo.Remove_Guard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="Remove_Guard" Height="600" Width="930">
+    <Grid Background="AntiqueWhite">
+        <Image HorizontalAlignment="Left" Height="630" Margin="0,0,0,-0.333" VerticalAlignment="Top" Width="930" Stretch="UniformToFill" Source="maxresdefault.jpg"/>
+        <Label Content="Name: " FontSize="32" FontFamily="arial black"  HorizontalAlignment="Left" Margin="137,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.551" Height="44" Width="135"/>
+        <TextBox Name="RGuard_Name" FontSize="32" HorizontalAlignment="Left" Height="44" Margin="347,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235"/>
+        <Label Content="Removes Guard" FontSize="50" FontFamily="Algerian" FontWeight="Heavy"  HorizontalAlignment="Left" Margin="299,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.439,0.532" Width="424" Height="74"/>
+        <Label Content="ID: " FontSize="32" FontFamily="arial black"  HorizontalAlignment="Left" Margin="137,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,0.551" Height="47" Width="135"/>
+        <TextBox Name="RGuard_ID" FontSize="32" HorizontalAlignment="Left" Height="47" Margin="347,274,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235"/>
+        <Button Content="Confirm" FontSize="48" FontFamily="gill sans ultra bold" HorizontalAlignment="Left" Margin="546,417,0,0" VerticalAlignment="Top" Width="271" Height="85" Click="Button_Click_1"/>
+        <Button Content="Back" FontSize="48" FontFamily="gill sans ultra bold" HorizontalAlignment="Left" Margin="34,417,0,0" VerticalAlignment="Top" Width="271" Height="85" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>

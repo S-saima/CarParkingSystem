@@ -1,0 +1,35 @@
+﻿<Window x:Class="demo.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="Login" Height="600" Width="930">
+    <Viewbox Stretch="Fill">
+        <Grid Background="AntiqueWhite"  Height="450" Width="800"  >
+            <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" Stretch="UniformToFill" Source="underground-car-parking-garage-with-vacant-places_107791-1635.jpg"/>
+
+            <Label Content="WELCOME TO PARKING MANAGEMENT " Foreground="Cyan"  FontFamily="ALGERIAN" FontSize="40" VerticalAlignment="Bottom" Height="57" Margin="27,0,37,354" RenderTransformOrigin="0.494,0.391"/>
+            <Label Content="User Name" Foreground="GhostWhite"  FontSize="23" FontFamily="arial black" VerticalAlignment="Bottom" Height="33" Margin="250,0,365,265" RenderTransformOrigin="0.488,0.48"/>
+            <Label Content="Password"  Foreground="GhostWhite"  FontFamily="arial black" FontSize="23" VerticalAlignment="Bottom" Height="55" Margin="250,0,390,166" RenderTransformOrigin="0.5,0.5"/>
+
+
+            <TextBox Name="uName" HorizontalAlignment="Left" FontSize="15" Background="LightCyan"  Height="33" Margin="433,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="155"/>
+            <Button Content="LOGIN" FontFamily="VINETA BT" Background="CadetBlue" Height="81" FontSize="41" HorizontalAlignment="Left" Margin="454,359,0,0" VerticalAlignment="Top" Width="238" Click="Button_Click" />
+            <Label Content="" Name="userError" Foreground="White" FontFamily="Arial Black" FontSize="14" HorizontalAlignment="Left" Margin="593,152,0,0" VerticalAlignment="Top" Width="190" Height="33"/>
+            <Label Content="" Name="passError" Foreground="White" FontFamily="Arial Black" FontSize="14" HorizontalAlignment="Left" Margin="593,229,0,0" VerticalAlignment="Top" Width="175" Height="29"/>
+            <Label Content="Type"  Foreground="GhostWhite"  FontSize="23" FontFamily="arial black" HorizontalAlignment="Left" Margin="284,284,0,0" VerticalAlignment="Top" Width="77" Height="46"/>
+            <ComboBox Name="Combo" FontSize="20" HorizontalAlignment="Left"  Margin="433,284,0,0" VerticalAlignment="Top" Width="155">
+                <ComboBoxItem IsSelected="True" Name="ADMIN" Content="Admin"/>
+                <ComboBoxItem Name="MANAGER" Content="Manager"/>
+                <ComboBoxItem Name="GUARD" Content="Guard"/>
+
+
+            </ComboBox>
+            <PasswordBox Name="uPass"  HorizontalAlignment="Left" Margin="434,229,0,0" VerticalAlignment="Top" Width="154" Height="29"/>
+            <Button Content="USER" Background="CadetBlue"  FontFamily="VINETA BT" HorizontalAlignment="Left" FontSize="40" Margin="176,359,0,0" VerticalAlignment="Top" Width="212" Height="76" Click="User_Click"/>
+
+        </Grid>
+    </Viewbox>
+</Window>

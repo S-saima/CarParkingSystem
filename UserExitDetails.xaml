@@ -1,0 +1,24 @@
+﻿<Window x:Class="demo.UserExitDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="UserExitDetails" Height="600" Width="930">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="571" VerticalAlignment="Top" Width="923" Stretch="UniformToFill" Source="maxresdefault.jpg" Margin="0,0,0,-0.333"/>
+        <Label Content="User Exit Details"  Background="LightBlue"  FontFamily="ALGERIAN" FontSize="55"  HorizontalAlignment="Left" Margin="297,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Token Id:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.729,-0.621"/>
+        <Label Content="Token Id:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.729,-0.621"/>
+        <Label Content="Vehicle No:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,0.852"/>
+        <Label Content="Vehicles Exit Time:"  Foreground="White"  FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,420,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,0.852"/>
+        <Button Content="Back" FontSize="28" FontFamily="algerian" HorizontalAlignment="Left" Margin="686,420,0,0" VerticalAlignment="Top" Width="181" Height="79" Click="Button_Click_1"/>
+        <TextBox Name="Exit_VN" FontSize="25" HorizontalAlignment="Left" Height="39" Margin="297,277,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <TextBox Name="Exit_Id" FontSize="25" HorizontalAlignment="Left" Height="39" Margin="297,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <Button Content="Confirm" FontSize="28" FontFamily="algerian" HorizontalAlignment="Left" Margin="686,277,0,0" VerticalAlignment="Top" Width="181" Height="79" Click="Button_Click"/>
+        <TextBox Name="Exit_Time" FontSize="25" HorizontalAlignment="Left" Height="39" Margin="297,420,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+
+
+    </Grid>
+</Window>

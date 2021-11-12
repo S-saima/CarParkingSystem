@@ -1,0 +1,20 @@
+﻿<Window x:Class="demo.Manager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="Manager" Height="630" Width="930">
+    <Grid Background="AntiqueWhite">
+        <Image HorizontalAlignment="Left" Height="601" Margin="0,0,-6.667,-0.333" VerticalAlignment="Top" Width="930" Stretch="UniformToFill" Source="maxresdefault.jpg"/>
+        <Label Content="Welcome Manager" Background="LightBlue"  FontFamily="ALGERIAN" FontSize="45" VerticalAlignment="Bottom" Height="92" Margin="248,0,223.333,471.667" RenderTransformOrigin="0.494,0.391"/>
+        <Button Name="A_Guard" Content="ADD GUARD" FontSize="25" FontFamily="COOPER BLACK" HorizontalAlignment="Left" Margin="90,182,0,0" VerticalAlignment="Top" Width="323" Height="77" Click="A_Guard_Click"/>
+        <Button Name="R_Guard" Content="REMOVE GUARD" FontSize="25" FontFamily="COOPER BLACK" HorizontalAlignment="Left" Margin="90,341,0,0" VerticalAlignment="Top" Width="323" Height="77" Click="R_Guard_Click"/>
+        <Button Name="P_Details" Content="PARKING DETAILS" FontSize="25" FontFamily="COOPER BLACK" HorizontalAlignment="Left" Margin="496,341,0,0" VerticalAlignment="Top" Width="323" Height="81" Click="P_Details_Click"/>
+        <Button Name="G_Details" Content="GUARD DETAILS" FontSize="25" FontFamily="COOPER BLACK" HorizontalAlignment="Left" Margin="496,178,0,0" VerticalAlignment="Top" Width="323" Height="81" Click="G_Details_Click"/>
+        <Button Name="Logout" Content="Logout" Background="Red" FontSize="25" FontFamily="COOPER BLACK" HorizontalAlignment="Left" Margin="743,498,0,0" VerticalAlignment="Top" Width="144" Height="73" Click="Logout_Click"/>
+        <Button Name="Change_Password" Content="Change Password" Background="LightBlue"  FontSize="25" FontFamily="COOPER BLACK" HorizontalAlignment="Left" Margin="324,498,0,0" VerticalAlignment="Top" Width="234" Height="73" Click="ChangePassword_Click"/>
+
+    </Grid>
+</Window>

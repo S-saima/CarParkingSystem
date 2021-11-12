@@ -1,0 +1,43 @@
+﻿<Window x:Class="demo.Guard_Task"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="Guard_Task" Height="600" Width="930">
+    <Grid Background="AntiqueWhite" RenderTransformOrigin="0.508,0.542">
+        <Image HorizontalAlignment="Left" Height="571" VerticalAlignment="Top" Width="923" Stretch="UniformToFill" Source="maxresdefault.jpg" Margin="0,0,0,-0.333"/>
+        <Label Content=" User Entry Details"  Background="LightBlue"  FontFamily="ALGERIAN" FontSize="55"  HorizontalAlignment="Left" Margin="233,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Token Id:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,362,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.729,-0.621"/>
+        <Label Content="Vehicle No:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="10,424,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,0.852"/>
+        <Label Content="Vehicle Type:"  Foreground="White"  FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="10,500,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,0.852"/>
+        <Label Content="Vehicles Entry Time:"  Foreground="White"  FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="415,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,0.852"/>
+        <Button Content="Back" FontSize="35" FontFamily="vineta BT" HorizontalAlignment="Left" Margin="544,452,0,0" VerticalAlignment="Top" Width="298" RenderTransformOrigin="0.838,1.152" Height="87" Click="Button_Click_1"/>
+        <TextBox Name="U_Id"  FontSize="20" HorizontalAlignment="Left" Height="43" Margin="211,358,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.535,0.628"/>
+        <TextBox Name="V_No"  FontSize="20" HorizontalAlignment="Left" Height="39" Margin="211,424,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
+        <ComboBox Name="V_Type" FontSize="20" HorizontalAlignment="Left" Margin="211,500,0,0" VerticalAlignment="Top" Width="147" Height="39">
+            <ComboBoxItem FontSize="20" IsSelected="True" Name="CAR">Car</ComboBoxItem>
+            <ComboBoxItem FontSize="20" Name="BIKE">Bike</ComboBoxItem>
+            <ComboBoxItem FontSize="20" Name="OTHER">Other</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Branch Name:"  Foreground="White"  FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="451,211,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.437,0.852"/>
+        <ComboBox Name="Branch_Name" FontSize="20" HorizontalAlignment="Left" Margin="695,215,0,0" VerticalAlignment="Top" Width="147" Height="39">
+            <ComboBoxItem IsSelected="True"  Content="Uttara"/>
+            <ComboBoxItem  Content="Mirpur"/>
+            <ComboBoxItem  Content="Banani"/>
+            <ComboBoxItem  Content="Dhanmondi"/>
+            <ComboBoxItem  Content="Bashundhara"/>
+
+        </ComboBox>
+        <Button Content="Confirm" FontSize="35" FontFamily="vineta BT" HorizontalAlignment="Left" Margin="544,314,0,0" VerticalAlignment="Top" Width="298" RenderTransformOrigin="0.838,1.152" Height="87" Click="Button_Click"/>
+        <TextBox Name="Entry_Time"  FontSize="20" HorizontalAlignment="Left" Height="43" Margin="698,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="191"/>
+        <Label Content="User Name:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.729,-0.621" Width="178"/>
+        <TextBox Name="User_Name"  FontSize="20" HorizontalAlignment="Left" Height="43" Margin="206,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="152" RenderTransformOrigin="0.535,0.628"/>
+        <Label Content="Phone:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,211,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.729,-0.621" Width="178"/>
+        <TextBox Name="User_Phone"  FontSize="20" HorizontalAlignment="Left" Height="43" Margin="211,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.535,0.628"/>
+        <TextBox Name="User_Address"  FontSize="20" HorizontalAlignment="Left" Height="43" Margin="206,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.535,0.628"/>
+        <Label Content="Address:"  Foreground="White" FontFamily="Cooper Black" FontSize="25" HorizontalAlignment="Left" Margin="33,292,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.729,-0.621" Width="178"/>
+
+    </Grid>
+</Window>
